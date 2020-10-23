@@ -14,11 +14,11 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <a href="{{url('pregunta', ['infantil'])}}" class="btn btn-block btn-light pull-right"><b>INFANTIL</b></a>
+            <a href="{{url('api/alumnos', ['infantil'])}}" class="btn btn-block btn-light pull-right"><b>INFANTIL</b></a>
             <br>
-            <a href="{{url('pregunta', ['primaria'])}}" class="btn btn-block btn-light pull-right"><b>PRIMARIA</b></a>
+            <a href="{{url('api/alumnos', ['primaria'])}}" class="btn btn-block btn-light pull-right"><b>PRIMARIA</b></a>
             <br>
-            <a href="{{url('pregunta', ['secundaria'])}}" class="btn btn-block btn-light pull-right"><b>SECUNDARIA</b></a>
+            <a href="{{url('api/alumnos', ['secundaria'])}}" class="btn btn-block btn-light pull-right"><b>SECUNDARIA</b></a>
         </div>
     </div>
 </div>
