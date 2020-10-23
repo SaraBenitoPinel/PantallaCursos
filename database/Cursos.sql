@@ -1,4 +1,4 @@
-INSERT INTO `cursos` (`dni`, `nombre`, `apellidos`, `curso`, `grupo`, `fechanacimiento`, `direccion`) VALUES
+INSERT INTO `alumnos` (`dni`, `nombre`, `apellido`, `curso`, `grupo`, `fechanacimiento`, `direccion`) VALUES
 ('34532267R', 'Maria', 'Jimenez Gonzalez', 'primaria', '2ºC', '7/06/2006', 'Calle los Alamos'),
 ('34346767S', 'Raul', 'Benito Gonzalez', 'infantil', '3ºC', '7/10/2007', 'Calle los Manzanos'),
 ('32132267R', 'Oscar', 'Jimenez Santos', 'primaria', '1ºC', '5/08/2001', 'Calle los Alamos'),
