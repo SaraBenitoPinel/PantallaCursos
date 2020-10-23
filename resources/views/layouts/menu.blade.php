@@ -9,9 +9,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body>
-    @section('barralateral')
-    Esto es la barra lateral
+<body style='background-image: url("img/fondo.jpg");'>
+    @section('nombre')
+    Esto es lo que se ve como titulo principal
     @show
     <div class="container">
         @yield('contenido')
