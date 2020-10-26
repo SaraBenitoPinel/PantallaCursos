@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('principal');
 });
-Route::get('/datos/{curso}', function ($curso){
-    return view('datos',["curso"=>$curso]);
-});
-Route::get('alumnos/{curso}', 'alumnosController@abre_alumnos');
+// Route::get('/datos/{curso}', function ($curso){
+//     return view('datos',["curso"=>$curso]);
+// });
+Route::get('datos/{curso}', 'alumnosController@carga_datos');

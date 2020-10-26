@@ -13,12 +13,12 @@
 <div class="container">
     <div class="row">
         <div class="col-3"></div>
-        <div class="col-6">
-            <a href="{{url('api/alumnos', ['infantil'])}}" class="btn btn-block btn-light pull-right"><b>INFANTIL</b></a>
+         <div class="col-6"> <!--QUE ME ABRA CON EL BOTON DEPENDIENDO DEL CURSO Y ME PONGA SUS DATOS -->
+            <a href="{{url('/datos', ['infantil'])}}" class="btn btn-block btn-light pull-right"><b>INFANTIL</b></a>
             <br>
-            <a href="{{url('api/alumnos', ['primaria'])}}" class="btn btn-block btn-light pull-right"><b>PRIMARIA</b></a>
+            <a href="{{url('/datos', ['primaria'])}}" class="btn btn-block btn-light pull-right"><b>PRIMARIA</b></a>
             <br>
-            <a href="{{url('api/alumnos', ['secundaria'])}}" class="btn btn-block btn-light pull-right"><b>SECUNDARIA</b></a>
+            <a href="{{url('/datos', ['secundaria'])}}" class="btn btn-block btn-light pull-right"><b>SECUNDARIA</b></a>
         </div>
     </div>
 </div>
