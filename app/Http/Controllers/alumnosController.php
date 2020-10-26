@@ -14,4 +14,7 @@ class alumnosController extends Controller
         return view('datos')->with('alumnos',Alumnos::where ('curso',$curso)->get())
                                ->with('curso',$curso);
     }
+    // public function eliminaAlumnos($drop){
+    //     return view('datos')->with('alumnos'),Alumnos::where ('')
+    // }
 }

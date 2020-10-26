@@ -10,7 +10,7 @@
 @endsection
 
 @section('contenido')
-<h1>Datos de los alumnos del curso de: {{$curso}}</h1>
+<h3>Datos de los alumnos del curso de : {{$curso}}</h3>
 <div class="container">
     <div class="row">
         <div class="col-3"></div>
@@ -38,6 +38,8 @@
                         <td>{{$alumno->grupo}}</td>
                         <td>{{$alumno->fechanacimiento}}</td>
                         <td>{{$alumno->direccion}}</td>
+                        <td><a class="btn btn-xs btn-warning pull-right">Editar</a></td>
+                        <td><a class="btn btn-xs btn-danger pull-right">Borrar</a></td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -45,5 +47,6 @@
         </div>
     </div>
 </div>
-<a href="{{url('/')}}" class="btn btn-xs btn-success pull-right">Menu principal</a>
+<a href="{{url('/')}}" class="btn btn-xs btn-success float-right">Menu principal</a>
+<br><br><br>
 @endsection
