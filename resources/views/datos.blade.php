@@ -28,15 +28,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">{{$alumnos[0]->dni}}</th>
-                        <td>{{$alumnos[0]->nombre}}</td>
-                        <td>{{$alumnos[0]->apellido}}</td>
-                        <td>{{$alumnos[0]->curso}}</td>
-                        <td>{{$alumnos[0]->grupo}}</td>
-                        <td>{{$alumnos[0]->fechanacimiento}}</td>
-                        <td>{{$alumnos[0]->direccion}}</td>
+                @foreach($alumnos as $alumno) 
+                <!-- BUCLE FOR PARA RECORRER LA BASE DE DATOS -->
+                <tr>
+                        <th scope="row">{{$alumno->dni}}</th>
+                        <td>{{$alumno->nombre}}</td>
+                        <td>{{$alumno->apellido}}</td>
+                        <td>{{$alumno->curso}}</td>
+                        <td>{{$alumno->grupo}}</td>
+                        <td>{{$alumno->fechanacimiento}}</td>
+                        <td>{{$alumno->direccion}}</td>
                     </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

@@ -11,7 +11,7 @@ class alumnosController extends Controller
         return Alumnos::where("curso",$curso)->inRandomOrder()->first();
     }
     public function carga_datos($curso){ //PARA QUE ME CARGUE LOS DATOS DE LOS ALUMNOS DEPENDIENDO DEL CURSO
-        return view('datos')->with('alumnos',Alumnos::where ('curso',$curso)->inRandomOrder()->limit(1)->get())
+        return view('datos')->with('alumnos',Alumnos::where ('curso',$curso)->get())
                                ->with('curso',$curso);
     }
 }
